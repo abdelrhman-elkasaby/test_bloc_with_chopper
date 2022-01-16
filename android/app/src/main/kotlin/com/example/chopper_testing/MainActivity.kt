@@ -1,0 +1,6 @@
+package com.example.chopper_testing
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
