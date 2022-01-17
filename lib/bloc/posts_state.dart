@@ -15,3 +15,11 @@ class PostsLoadedState extends PostsStates {
   @override
   List<Object> get props => [title];
 }
+
+class ImagesLoadedState extends PostsStates {
+  final Response<ImagesModel> img;
+
+  const ImagesLoadedState(this.img);
+  @override
+  List<Object> get props => [img];
+}

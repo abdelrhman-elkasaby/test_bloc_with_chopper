@@ -7,3 +7,8 @@ class PostLoadedEvent extends PostsEvent{
   @override
   List<Object?> get props => [];
 }
+
+class ImagesLoadedEvent extends PostsEvent{
+  @override
+  List<Object?> get props => [];
+}
