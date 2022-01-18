@@ -9,6 +9,8 @@ class PostLoadedEvent extends PostsEvent{
 }
 
 class ImagesLoadedEvent extends PostsEvent{
+  final int page;
+  const ImagesLoadedEvent({required this.page});
   @override
-  List<Object?> get props => [];
+  List<Object?> get props => [page];
 }

@@ -5,7 +5,7 @@ part 'images_service.chopper.dart';
 @ChopperApi(baseUrl: '/?key=25281376-b6ec795fb21e0936fbbac22f4')
 abstract class ImagesService extends ChopperService{
   @Get()
-  Future<Response<ImagesModel>> getImages();
+  Future<Response<ImagesModel>> getImages(@Query("page") int page, @Query("per_page") int pageSize);
   static ImagesService create(){
     final client =ChopperClient(
       baseUrl: 'https://pixabay.com/api',

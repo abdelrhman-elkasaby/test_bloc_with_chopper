@@ -23,3 +23,12 @@ class ImagesLoadedState extends PostsStates {
   @override
   List<Object> get props => [img];
 }
+
+class SystemsNetworkError extends PostsStates {
+  final String errorMessage;
+
+  const SystemsNetworkError(this.errorMessage);
+
+  @override
+  List<Object?> get props => [errorMessage];
+}

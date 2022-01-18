@@ -17,9 +17,10 @@ class _$ImagesService extends ImagesService {
   final definitionType = ImagesService;
 
   @override
-  Future<Response<ImagesModel>> getImages() {
+  Future<Response<ImagesModel>> getImages(int page, int pageSize) {
     final $url = '/?key=25281376-b6ec795fb21e0936fbbac22f4';
-    final $request = Request('GET', $url, client.baseUrl);
+    final $params = <String, dynamic>{'page': page, 'per_page': pageSize};
+    final $request = Request('GET', $url, client.baseUrl, parameters: $params);
     return client.send<ImagesModel, ImagesModel>($request);
   }
 }
